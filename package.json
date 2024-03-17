@@ -4,7 +4,9 @@
   "description": "Proyecto con Gulp, SASS Y Html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/Pro-gra-mer/MusicFestival#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.72.0"
   }
 }
