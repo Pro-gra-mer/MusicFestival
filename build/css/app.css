@@ -307,7 +307,73 @@ template {
   display: none;
 }
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.65rem;
+}
+
+p {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0 5rem 0;
+}
+
 h1 {
-  color: #F53756;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h1 {
+  color: #000000;
   text-transform: uppercase;
+}
+
+.header {
+  background-color: #4CB8B3;
+}
+.header h1 {
+  color: #FFFFFF;
+}
+
+.navegacion-principal a {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+.navegacion-principal a:hover {
+  color: #FEF46D;
+}
+
+.prueba {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: #FEF46D;
+  letter-spacing: 1px;
 }
