@@ -366,6 +366,14 @@ h1 {
 
 .header {
   background-color: #4CB8B3;
+  transition: all 0.7s ease;
+}
+@media (min-width: 768px) {
+  .header.fijo {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+  }
 }
 .header h1 {
   color: #FFFFFF;
@@ -404,6 +412,7 @@ h1 {
 @media (min-width: 768px) {
   .navegacion-principal a {
     margin: 0;
+    font-size: 2rem;
   }
 }
 .navegacion-principal a:hover {
@@ -451,7 +460,7 @@ h1 {
 .sobre-festival {
   padding: 5rem 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .sobre-festival {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -463,9 +472,15 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .contenido-festival h2 {
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .contenido-festival h2 {
+    margin-top: 0;
+  }
 }
 .contenido-festival .fecha {
   margin-top: 0;
@@ -476,7 +491,7 @@ h1 {
 
 .lineup {
   background-color: #F53756;
-  padding: 5rem 0;
+  padding: 2rem 0 10rem;
 }
 .lineup h3, .lineup p {
   text-align: center;
@@ -517,7 +532,7 @@ h1 {
 }
 
 .rock .nombre-escenario:after {
-  background-image: url(/img/icono_rock.png);
+  background-image: url(/img/rock_icon.png);
 }
 
 .calendario {
@@ -612,4 +627,76 @@ h1 {
 }
 .btn-cerrar:hover {
   cursor: pointer;
+}
+
+.tickets {
+  padding: 5rem 0;
+}
+.tickets h3 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase {
+  color: black;
+}
+.pase .nombre-pase {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+}
+.pase-header, .pase-footer {
+  padding: 0.5rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pase-header {
+  background-color: #F53756;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.pase-body {
+  background-color: #FFFFFF;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li,
+.pase-body ul :nth-child(odd) {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase-footer {
+  background-color: #752F97;
+}
+.pase-footer p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.sitio-footer {
+  background-color: #F53756;
+  padding: 1rem;
+}
+.sitio-footer p {
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
 }

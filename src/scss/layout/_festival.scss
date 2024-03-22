@@ -3,7 +3,7 @@
 
 .sobre-festival {
     padding: 5rem 0;
-    @include m.tablet {
+    @include m.desktop {
         @include m.grid(2, 5rem);
     }
 }
@@ -13,8 +13,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
     h2 {
         margin-bottom: 1rem;
+        @include m.tablet {
+            margin-top: 0;
+        }        
     }
     .fecha {
         margin-top: 0;

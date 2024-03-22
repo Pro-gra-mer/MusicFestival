@@ -3,13 +3,21 @@
 
 .header {
     background-color: v.$verde;
+    transition: all 0.7s ease;
+    @include m.tablet {
+        &.fijo {
+            position: fixed;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }    
 
     h1 {
         color: v.$blanco;
         text-align: center;
         @include m.tablet {
             margin: 0;
-        }        
+        }          
     } 
     .contenido-header {
         padding: 2rem;
@@ -35,8 +43,9 @@
         margin-bottom: 1rem;
         @include m.tablet {
             margin: 0;
+            font-size: 2rem;
         }
-        
+               
         &:hover {
             color: v.$amarillo;
         }

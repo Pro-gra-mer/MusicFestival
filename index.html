@@ -17,9 +17,9 @@
             <h1>Mad Cool Festival</h1>
 
             <nav class="navegacion-principal">
-                <a href="#">Line Up</a>
-                <a href="#">Galeria</a>
-                <a href="#">Tickets</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#tickets">Tickets</a>
             </nav>
         </div>
     </header>
@@ -41,8 +41,7 @@
         <div class="contenido-festival">
             <h2>Tom Morello</h2>
             <p class="fecha">13 Julio 2024</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
     </section>
     <section id="lineup" class="lineup">
@@ -158,12 +157,54 @@
             </div> <!--.escenario-->
         </div> <!--.escenarios-contenedor -->
     </section>
-    <section class="galeria contenedor">
-        <h3>Galería</h3>
-        <ul class="galeria-imagenes">
 
-        </ul>
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes"></ul>
     </section>
+        
+    <section id="tickets" class="tickets bg-verde">
+        <h3>Tickets</h3>
+
+        <div class="contenedor contenedor-tickets">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>100€</p>
+                </footer>
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>180€</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sitio-footer">
+        <p>Mad Cool Festival. Todos los derechos Reservados</p>
+    </footer>
     
     <script src="build/js/app.js"></script>
 </body>
